@@ -1,3 +1,5 @@
+//MY SOLUTION
+
 function solve(arr){
     // I create a new empty array
     let newArray = []
@@ -10,4 +12,10 @@ function solve(arr){
       }
     }
     return newArray.reverse()
+}
+
+// THE BEST
+
+function solve(arr){
+    return arr.filter((val,i) => arr.lastIndexOf(val) == i);
 }
